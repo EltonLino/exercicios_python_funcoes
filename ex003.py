@@ -1,9 +1,9 @@
 def saudacao(hora):
     if hora < 12:
         return 'Bom dia'
-    elif 12 > hora < 18:
+    if 12 >= hora < 18:
         return 'Boa tarde'
-    else:
+    if hora >= 18:
         return'Boa noite'
     
 hora = int(input('Digite a hora atual (0-23): '))
